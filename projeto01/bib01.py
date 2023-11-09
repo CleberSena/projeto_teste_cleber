@@ -1,3 +1,5 @@
+import os
+
 def linha(tam=50):
     return '\033[1;32m-' * tam
 
@@ -7,15 +9,26 @@ def cabecalho(txt):
 
 def menu(lista):
     cabecalho('\033[1;33mMenu Principal')
-    c = 1
+    c = 0
     for item in lista:
         print(f'\033[1;35m{c}\033[32m =>\033[35m {item}')
         c += 1
 
+def informacoesPessoais():
+    nome = input('Digite seu nome: ').strip().upper()
+    email = input('Digite seu email: ').strip()
+    telefone = int(input('Digite seu Contato de Telefone com DDD: '))
+    Cidade = input('Digite sua Cidade: ').strip().upper()
+    Estado = input('Digite seu Estado: ').strip().upper()
+    return nome, email, telefone, Cidade, Estado
+
+
+
 class dadosPessoais:
-    def __init__(self):
-        self.nome = "\033[36mCleber Winkestroter Sena"
-        self.email = "\033[37mkalebydev@hgmail.com"
-        self.telefone = "\033[34m(33)-987040542"
-        self.Cidade = "\033[33mJoão Molevade"
-        self.Estado = "\033[32mMinas Gerais"
+    def __init__(self, nome, email, telefone, Cidade, Estado):
+        self.nome = nome
+        self.email = email
+        self.telefone = telefone
+        self.Cidade = Cidade
+        self.Estado = Estado
+        Sair_Do_Sistema = '\033[31mFinalizando o Sistema! Volte swmpre:'
