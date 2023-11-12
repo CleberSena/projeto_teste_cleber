@@ -28,7 +28,7 @@ def lerArquivo(nome):
     finally:
         a.close()
 
-def Cadastrar(nome, email, telefone, Cidade, Estado):
+def Cadastrar(arq, nome, email, telefone, Cidade, Estado):
     try:
         a = open(nome, email, telefone, Cidade, Estado, 'at')
     except:
