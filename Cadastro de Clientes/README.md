@@ -25,9 +25,7 @@ Costumização
 Sinta-se à vontade para personalizar o código de acordo com seus requisitos específicos. Você pode modificar os prompts de entrada, adicionar mais campos ou aprimorar a validação conforme necessário.
 
 Autor
-[Seu nome]
+Cleber Winkelstroter Sena
 
 Licença
 Este projeto está licenciado sob a licença MIT - consulte o arquivo LICENSE para obter detalhes.
-
-Substitua "[Seu nome]" pelo seu nome real e, se você planeja distribuir ou compartilhar este código, considere adicionar um arquivo de licença (por exemplo, LICENSE) com as informações de licença apropriadas. O modelo acima é um ponto de partida; você pode expandi-lo com base nos detalhes específicos e no contexto do seu projeto.
