@@ -16,7 +16,7 @@ def token_obrigatorio(f):
             return jsonify({'mensagem': 'Token não incluído!'}, 401)
         # Se temos um token, validar acesso consultando o BD:
         try:
-            resultado = jwt.decode(token, app.config['SECRET_KEY'], algorithms=["HS256"])
+            resultado = jwt.decode(token, app.config['SECRET_KEY'], algorithms=['HS256'])
             autor = Autor.query.filter_by(id_autor = resultado['id_autor']).first()
         except:
             return jsonify({'mensagem': 'Token inválido'}, 401)
